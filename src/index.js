@@ -8,6 +8,10 @@ import { store } from './store'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 
+import './vendor/normalize.css'
+import './vendor/bootstrap.bundle.min'
+import './vendor/bootstrap.min.css'
+
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>

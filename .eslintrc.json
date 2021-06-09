@@ -21,10 +21,16 @@
   ],
   "parser": "babel-eslint",
   "rules": {
-    "quotes": ["warn", "single", { "allowTemplateLiterals": true }],
+//    "quotes": ["warn", "single", { "allowTemplateLiterals": true }],
     "no-debugger": "warn",
     "no-unused-vars": "warn",
-    "react/prop-types": "off",
+    // use bootstrap
+    "quotes": "off",
+    "no-prototype-builtins": "off",
+    "no-undef": "off",
+    "no-self-assign": "off",
+    // use bootstrap
+    "react/prop-types": "warn",
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
     "react-hooks/rules-of-hooks": "error",

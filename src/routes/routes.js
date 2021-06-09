@@ -1,5 +1,5 @@
-import HomePage from '../pages/HomePage'
-import AboutPage from '../pages/AboutPage'
+import { lazy } from 'react'
+import HomePage from '../views/HomePage'
 
 export const routes = [
   {
@@ -11,9 +11,16 @@ export const routes = [
   },
   {
     path: '/about',
-    component: AboutPage,
+    component: lazy(() => import('../views/AboutPage')),
     exact: true,
     isAuth: false,
     title: 'О проекте',
+  },
+  {
+    path: '/news',
+    component: lazy(() => import('../views/NewsPage')),
+    exact: true,
+    isAuth: false,
+    title: 'Новости',
   },
 ]
