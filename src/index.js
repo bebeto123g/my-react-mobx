@@ -1,6 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+import './vendor/normalize.css'
+import './vendor/bootstrap.bundle.min'
+import './vendor/bootstrap.min.css'
+
 import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'mobx-react'
 import { store } from './store'
@@ -8,9 +12,7 @@ import { store } from './store'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 
-import './vendor/normalize.css'
-import './vendor/bootstrap.bundle.min'
-import './vendor/bootstrap.min.css'
+
 
 ReactDOM.render(
   <Provider store={store}>

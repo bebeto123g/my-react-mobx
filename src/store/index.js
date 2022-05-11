@@ -1,5 +1,9 @@
 import Alert from './Alert'
+import Auth from './Auth'
+import Modal from './Modal'
 
 export const store = {
-  Alert
+    Alert,
+    Auth,
+    Modal,
 }
